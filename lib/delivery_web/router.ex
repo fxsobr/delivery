@@ -7,6 +7,8 @@ defmodule DeliveryWeb.Router do
 
   scope "/api", DeliveryWeb do
     pipe_through :api
+
+    get "/", WelcomeController, :index
   end
 
   # Enable LiveDashboard and Swoosh mailbox preview in development
