@@ -3,8 +3,9 @@ import Config
 # Configure your database
 config :delivery, Delivery.Repo,
   username: "postgres",
-  password: "postgres",
+  password: "pequena",
   hostname: "localhost",
+  port: 5433,
   database: "delivery_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
