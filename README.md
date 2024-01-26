@@ -1,18 +1,42 @@
 # Delivery
 
-To start your Phoenix server:
+Implementação de uma API utilizando Elixir, Phoenix, Ecto e PostgreSQL
 
-  * Run `mix setup` to install and setup dependencies
-  * Start Phoenix endpoint with `mix phx.server` or inside IEx with `iex -S mix phx.server`
+## Instalação
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
+O projeto necessita do [Elixir](https://elixir-lang.org/) 1.14 e do [Phoenix](https://www.phoenixframework.org/) 1.7.2
 
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
+Instale as dependências e inicie o servidor.
 
-## Learn more
+```sh
+cd delivery
+mix deps.get
+mix phx.server
+```
 
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+## Banco de Dados
+
+Para alterar as configurações do banco de dados, é necessário acessar a pasta config e editar os valores nos arquivos `dev.exs` e `test.exs`.
+
+```elixir
+username: "postgres",
+password: "postgres",
+hostname: "localhost",
+port: 5432,
+```
+
+### Inicializando banco
+
+Para criar o schema configurado nos arquivo `dev.exs`, basta rodar o comando abaixo.
+
+```sh
+mix ecto.setup
+```
+
+### Migration
+
+Para realizar enviar uma migration para o banco de dados, basta rodar o comando abaixo.
+
+```sh
+mix ecto.migrate
+```
