@@ -44,7 +44,9 @@ defmodule Delivery.MixProject do
       {:gettext, "~> 0.20"},
       {:jason, "~> 1.2"},
       {:plug_cowboy, "~> 2.5"},
-      {:credo, "~> 1.7", only: [:dev, :test], runtime: false}
+      {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
+      {:comeonin, "~> 5.0"},
+      {:pbkdf2_elixir, "~> 2.0"}
     ]
   end
 
