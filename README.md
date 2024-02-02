@@ -40,3 +40,18 @@ Para realizar enviar uma migration para o banco de dados, basta rodar o comando 
 ```sh
 mix ecto.migrate
 ```
+
+### Testes
+
+Para verificar a cobertura de testes utilizando a lib excoveralls, basta rodar o comando abaixo.
+`arquivos salvos na pasta cover`
+
+```sh
+mix coveralls
+```
+
+Para gerar documentação html da cobertura de código, basta rodar o comando abaixo.
+
+```sh
+mix coveralls.html
+```
