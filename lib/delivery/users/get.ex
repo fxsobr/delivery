@@ -9,6 +9,10 @@ defmodule Delivery.Users.Get do
     end
   end
 
+  def get_all do
+    Repo.all(User)
+  end
+
   defp get(id) do
     case Repo.get(User, id) do
       nil -> {:error, Error.build_user_not_found_error()}

@@ -13,4 +13,10 @@ defmodule DeliveryWeb.UsersJSON do
       user: user
     }
   end
+
+  def render("index.json", %{users: users}) do
+    %{
+      users: users
+    }
+  end
 end

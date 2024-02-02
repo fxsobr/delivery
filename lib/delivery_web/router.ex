@@ -8,7 +8,6 @@ defmodule DeliveryWeb.Router do
   scope "/api", DeliveryWeb do
     pipe_through :api
 
-    get "/", WelcomeController, :index
     resources "/users", UsersController, except: [:new, :edit]
   end
 
