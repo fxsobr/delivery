@@ -27,6 +27,12 @@ port: 5432,
 
 ### Inicializando banco
 
+Para criar um nova migration, basta rodar o comando abaixo.
+
+```sh
+mix ecto.gen.migration nome_migration
+```
+
 Para criar o schema configurado nos arquivo `dev.exs`, basta rodar o comando abaixo.
 
 ```sh
