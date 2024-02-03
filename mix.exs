@@ -55,7 +55,8 @@ defmodule Delivery.MixProject do
       {:credo, "~> 1.7", only: [:dev, :test], runtime: false},
       {:comeonin, "~> 5.0"},
       {:pbkdf2_elixir, "~> 2.0"},
-      {:excoveralls, "~> 0.18", only: :test}
+      {:excoveralls, "~> 0.18", only: :test},
+      {:ex_machina, "~> 2.7.0"}
     ]
   end
 
